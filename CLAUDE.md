@@ -63,6 +63,7 @@
 ```
 my-portfolio/
 ├── index.html              # 主页面（作品集）
+├── xiaohongshu-covers.html # 小红书封面素材（两种风格）
 ├── package.json            # 项目依赖
 ├── vite.config.js          # Vite 配置
 ├── tailwind.config.js      # Tailwind CSS 配置
@@ -72,6 +73,12 @@ my-portfolio/
 ├── 发帖文案.md             # 闲鱼、小红书、朋友圈文案
 ├── 闲鱼商品文案.md         # 3 个闲鱼商品的详细文案
 ├── .gitignore
+├── assets/                 # 封面素材
+│   ├── 封面1_科技深色风.png   # 小红书封面（科技感）
+│   ├── 封面2_黄色醒目风.png   # 小红书封面（高曝光）
+│   ├── case_zhijin.png       # 璟庭私房菜截图
+│   ├── case_yueyan.png       # 悦颜医美截图
+│   └── case_yunzhi.png       # 云智科技截图
 └── src/
     └── input.css           # Tailwind CSS 入口文件
 ```
@@ -240,6 +247,12 @@ vercel alias ls      # 查看别名
 - 绑定域名 oreocolor.xyz
 - 编写完整的接单文案（闲鱼、小红书、朋友圈）
 - 推送到 GitHub
+
+**2026-04-08：**
+- 制作小红书封面素材（两种风格：科技深色风 + 黄色醒目大字风）
+- 截取 3 个企业官网案例真实截图（餐饮/医美/科技）
+- 优化闲鱼简介文案（分段要点式，参考同行最佳实践）
+- 封面素材保存在 assets/ 目录
 
 ---
 

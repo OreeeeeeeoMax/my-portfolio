@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小红书封面素材</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #e5e7eb;
+      font-family: 'Noto Sans SC', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 40px;
+      gap: 60px;
+    }
+
+    .cover-label {
+      font-size: 18px;
+      font-weight: 700;
+      color: #374151;
+      margin-bottom: 16px;
+      letter-spacing: 0.02em;
+    }
+
+    /* ========== COVER 1: CODE SCENE ========== */
+    .cover-1 {
+      width: 450px;
+      height: 600px;
+      background: #0a0e1a;
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.06);
+    }
+
+    .cover-1::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 600px 400px at 30% 40%, rgba(59,130,246,0.12) 0%, transparent 70%),
+        radial-gradient(ellipse 400px 300px at 70% 60%, rgba(139,92,246,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .cover-1 .top-section {
+      position: relative;
+      z-index: 2;
+      padding: 28px 24px 16px;
+    }
+
+    .cover-1 .badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 20px;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+
+    .cover-1 h1 {
+      color: #fff;
+      font-size: 30px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+
+    .cover-1 h1 .highlight {
+      background: linear-gradient(90deg, #60a5fa, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .cover-1 .subtitle {
+      color: rgba(255,255,255,0.5);
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+    }
+
+    .cover-1 .workspace {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      gap: 10px;
+      padding: 12px 18px;
+      height: 340px;
+    }
+
+    /* VS Code Window */
+    .cover-1 .code-window {
+      flex: 1;
+      background: #1e1e2e;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    }
+
+    .cover-1 .window-bar {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 10px;
+      background: #181825;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .cover-1 .dot { width: 8px; height: 8px; border-radius: 50%; }
+    .cover-1 .dot-r { background: #f38ba8; }
+    .cover-1 .dot-y { background: #f9e2af; }
+    .cover-1 .dot-g { background: #a6e3a1; }
+
+    .cover-1 .tab {
+      margin-left: 8px;
+      font-size: 9px;
+      color: rgba(255,255,255,0.4);
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .cover-1 .tab.active {
+      color: #cdd6f4;
+      background: rgba(255,255,255,0.06);
+      padding: 2px 10px;
+      border-radius: 4px 4px 0 0;
+    }
+
+    .cover-1 .code-body {
+      flex: 1;
+      padding: 10px 0;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9px;
+      line-height: 1.7;
+      overflow: hidden;
+    }
+
+    .cover-1 .code-body .line {
+      display: flex;
+      padding: 0 12px;
+    }
+
+    .cover-1 .code-body .ln {
+      color: rgba(255,255,255,0.2);
+      width: 24px;
+      text-align: right;
+      margin-right: 12px;
+      flex-shrink: 0;
+    }
+
+    .cover-1 .code-body .kw { color: #cba6f7; }
+    .cover-1 .code-body .fn { color: #89b4fa; }
+    .cover-1 .code-body .str { color: #a6e3a1; }
+    .cover-1 .code-body .cm { color: rgba(255,255,255,0.25); font-style: italic; }
+    .cover-1 .code-body .op { color: #f38ba8; }
+    .cover-1 .code-body .var { color: #cdd6f4; }
+    .cover-1 .code-body .num { color: #fab387; }
+    .cover-1 .code-body .tag { color: #89b4fa; }
+    .cover-1 .code-body .attr { color: #f9e2af; }
+
+    /* Browser Window */
+    .cover-1 .browser-window {
+      flex: 1.15;
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    }
+
+    .cover-1 .browser-bar {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 10px;
+      background: #f0f0f0;
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+
+    .cover-1 .browser-url {
+      flex: 1;
+      background: #fff;
+      border-radius: 4px;
+      padding: 3px 8px;
+      font-size: 8px;
+      color: #999;
+      font-family: 'JetBrains Mono', monospace;
+      margin-left: 6px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .cover-1 .browser-url::before {
+      content: '';
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: #22c55e;
+      flex-shrink: 0;
+    }
+
+    .cover-1 .browser-content {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Bottom */
+    .cover-1 .bottom-bar {
+      position: relative;
+      z-index: 2;
+      padding: 14px 24px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .cover-1 .bottom-url {
+      color: rgba(255,255,255,0.6);
+      font-size: 12px;
+      font-weight: 500;
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: 0.02em;
+    }
+
+    .cover-1 .bottom-tag {
+      color: rgba(255,255,255,0.3);
+      font-size: 10px;
+      border: 1px solid rgba(255,255,255,0.12);
+      padding: 3px 10px;
+      border-radius: 12px;
+    }
+
+    /* Scanline overlay */
+    .cover-1 .scanlines {
+      position: absolute; inset: 0;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0,0,0,0.03) 2px,
+        rgba(0,0,0,0.03) 4px
+      );
+      pointer-events: none;
+      z-index: 3;
+    }
+
+    /* ========== COVER 2: YELLOW BOLD ========== */
+    .cover-2 {
+      width: 450px;
+      height: 600px;
+      background: #FBBF24;
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3), 0 0 0 1px rgba(0,0,0,0.06);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 36px 28px 28px;
+    }
+
+    .cover-2::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle 300px at 80% 20%, rgba(255,255,255,0.25) 0%, transparent 70%),
+        radial-gradient(circle 200px at 10% 80%, rgba(217,119,6,0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* Subtle grid pattern */
+    .cover-2::after {
+      content: '';
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+      background-size: 30px 30px;
+      pointer-events: none;
+    }
+
+    .cover-2 .top {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .cover-2 .tag-line {
+      display: inline-block;
+      background: #000;
+      color: #FBBF24;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 16px;
+      border-radius: 20px;
+      letter-spacing: 0.08em;
+      margin-bottom: 20px;
+    }
+
+    .cover-2 h1 {
+      color: #000;
+      font-size: 56px;
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+      text-shadow: 2px 3px 0 rgba(0,0,0,0.08);
+    }
+
+    .cover-2 .sub {
+      color: rgba(0,0,0,0.55);
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+    }
+
+    .cover-2 .price-cards {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .cover-2 .price-card {
+      background: #000;
+      color: #FBBF24;
+      border-radius: 10px;
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    }
+
+    .cover-2 .price-card .left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .cover-2 .price-card .icon-box {
+      width: 36px; height: 36px;
+      background: rgba(251,191,36,0.15);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+    }
+
+    .cover-2 .price-card .service-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .cover-2 .price-card .service-desc {
+      font-size: 10px;
+      color: rgba(255,255,255,0.4);
+      margin-top: 1px;
+    }
+
+    .cover-2 .price-card .price {
+      font-size: 22px;
+      font-weight: 900;
+      color: #FBBF24;
+      letter-spacing: -0.02em;
+    }
+
+    .cover-2 .price-card .price small {
+      font-size: 12px;
+      font-weight: 500;
+      opacity: 0.7;
+    }
+
+    .cover-2 .bottom {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .cover-2 .cta {
+      display: inline-block;
+      background: #000;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 12px 32px;
+      border-radius: 30px;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+
+    .cover-2 .cta-sub {
+      color: rgba(0,0,0,0.35);
+      font-size: 11px;
+      font-weight: 400;
+    }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 960px) {
+      body { padding: 30px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cover 1 -->
+  <div>
+    <div class="cover-label">封面 1：实拍场景感（科技深色风）</div>
+    <div class="cover-1">
+      <div class="scanlines"></div>
+
+      <div class="top-section">
+        <div class="badge">10 YEARS EXP</div>
+        <h1><span class="highlight">10年经验</span><br>程序员接单</h1>
+        <div class="subtitle">企业官网 &nbsp;|&nbsp; 小程序 &nbsp;|&nbsp; APP</div>
+      </div>
+
+      <div class="workspace">
+        <!-- Code Editor -->
+        <div class="code-window">
+          <div class="window-bar">
+            <div class="dot dot-r"></div>
+            <div class="dot dot-y"></div>
+            <div class="dot dot-g"></div>
+            <div class="tab active">index.html</div>
+            <div class="tab">style.css</div>
+          </div>
+          <div class="code-body">
+            <div class="line"><span class="ln">1</span><span class="tag">&lt;nav</span> <span class="attr">class</span>=<span class="str">"navbar"</span><span class="tag">&gt;</span></div>
+            <div class="line"><span class="ln">2</span><span class="kw">  &lt;div</span> <span class="attr">class</span>=<span class="str">"logo"</span><span class="kw">&gt;</span></div>
+            <div class="line"><span class="ln">3</span><span class="var">    璟庭私房菜</span></div>
+            <div class="line"><span class="ln">4</span><span class="kw">  &lt;/div&gt;</span></div>
+            <div class="line"><span class="ln">5</span><span class="kw">  &lt;ul</span> <span class="attr">class</span>=<span class="str">"nav-links"</span><span class="kw">&gt;</span></div>
+            <div class="line"><span class="ln">6</span><span class="var">    &lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="str">"#"</span><span class="tag">&gt;</span><span class="var">首页</span><span class="tag">&lt;/a&gt;</span></div>
+            <div class="line"><span class="ln">7</span><span class="var">    &lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="str">"#"</span><span class="tag">&gt;</span><span class="var">菜品</span><span class="tag">&lt;/a&gt;</span></div>
+            <div class="line"><span class="ln">8</span><span class="var">    &lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="str">"#"</span><span class="tag">&gt;</span><span class="var">关于</span><span class="tag">&lt;/a&gt;</span></div>
+            <div class="line"><span class="ln">9</span><span class="kw">  &lt;/ul&gt;</span></div>
+            <div class="line"><span class="ln">10</span><span class="tag">&lt;/nav&gt;</span></div>
+            <div class="line"><span class="ln">11</span></div>
+            <div class="line"><span class="ln">12</span><span class="cm">// 企业官网 · 3天交付</span></div>
+            <div class="line"><span class="ln">13</span><span class="cm">// 响应式 · Tailwind CSS</span></div>
+            <div class="line"><span class="ln">14</span></div>
+            <div class="line"><span class="ln">15</span><span class="kw">const</span> <span class="fn">buildSite</span> <span class="op">=</span> <span class="kw">async</span> <span class="op">()</span> <span class="op">=></span> <span class="op">{</span></div>
+            <div class="line"><span class="ln">16</span><span class="var">  </span><span class="kw">await</span> <span class="fn">design</span>(<span class="str">"premium"</span>)</div>
+            <div class="line"><span class="ln">17</span><span class="var">  </span><span class="kw">await</span> <span class="fn">deploy</span>(<span class="str">"vercel"</span>)</div>
+            <div class="line"><span class="ln">18</span><span class="op">}</span></div>
+            <div class="line"><span class="ln">19</span></div>
+            <div class="line"><span class="ln">20</span><span class="fn">buildSite</span>()</div>
+          </div>
+        </div>
+
+        <!-- Browser Preview - Portfolio Showcase -->
+        <div class="browser-window">
+          <div class="browser-bar">
+            <div class="dot dot-r"></div>
+            <div class="dot dot-y"></div>
+            <div class="dot dot-g"></div>
+            <div class="browser-url">oreocolor.xyz</div>
+          </div>
+          <div class="browser-content" style="background:linear-gradient(135deg, #0f172a, #1e1b4b); padding:10px; display:flex; flex-direction:column; gap:8px;">
+            <div style="text-align:center; padding:6px 0 2px;">
+              <div style="font-size:11px; font-weight:700; color:#fff; font-family:'Noto Sans SC',sans-serif;">网站作品集</div>
+              <div style="font-size:7px; color:rgba(255,255,255,0.4); margin-top:2px;">3 个行业案例 · 点击查看</div>
+            </div>
+            <!-- Case 1 -->
+            <div style="border-radius:6px; overflow:hidden; border:1px solid rgba(255,255,255,0.08); flex:1; position:relative;">
+              <div style="position:absolute; inset:0; background:url('assets/case_zhijin.png') center/cover;"></div>
+              <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%);"></div>
+              <div style="position:absolute; bottom:6px; left:8px; right:8px; display:flex; align-items:center; justify-content:space-between;">
+                <div>
+                  <div style="font-size:9px; font-weight:700; color:#fff;">璟庭·粤式私房菜</div>
+                  <div style="font-size:7px; color:rgba(255,255,255,0.5);">餐饮行业 · 金色主题</div>
+                </div>
+                <div style="width:6px; height:6px; border-radius:50%; background:#f59e0b;"></div>
+              </div>
+            </div>
+            <!-- Case 2 -->
+            <div style="border-radius:6px; overflow:hidden; border:1px solid rgba(255,255,255,0.08); flex:1; position:relative;">
+              <div style="position:absolute; inset:0; background:url('assets/case_yueyan.png') center/cover;"></div>
+              <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%);"></div>
+              <div style="position:absolute; bottom:6px; left:8px; right:8px; display:flex; align-items:center; justify-content:space-between;">
+                <div>
+                  <div style="font-size:9px; font-weight:700; color:#fff;">悦颜医疗美容</div>
+                  <div style="font-size:7px; color:rgba(255,255,255,0.5);">医美行业 · 粉色主题</div>
+                </div>
+                <div style="width:6px; height:6px; border-radius:50%; background:#db2777;"></div>
+              </div>
+            </div>
+            <!-- Case 3 -->
+            <div style="border-radius:6px; overflow:hidden; border:1px solid rgba(255,255,255,0.08); flex:1; position:relative;">
+              <div style="position:absolute; inset:0; background:url('assets/case_yunzhi.png') center/cover;"></div>
+              <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%);"></div>
+              <div style="position:absolute; bottom:6px; left:8px; right:8px; display:flex; align-items:center; justify-content:space-between;">
+                <div>
+                  <div style="font-size:9px; font-weight:700; color:#fff;">云智科技</div>
+                  <div style="font-size:7px; color:rgba(255,255,255,0.5);">科技行业 · 蓝色主题</div>
+                </div>
+                <div style="width:6px; height:6px; border-radius:50%; background:#2563eb;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-bar">
+        <span class="bottom-url">oreocolor.xyz</span>
+        <span class="bottom-tag">先看作品再决定</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cover 2 -->
+  <div>
+    <div class="cover-label">封面 2：黄色醒目大字（高曝光风）</div>
+    <div class="cover-2">
+      <div class="top">
+        <div class="tag-line">ACCEPTING ORDERS NOW</div>
+        <h1>程序员<br>接单</h1>
+        <div class="sub">10年经验 &nbsp;|&nbsp; 先看作品再决定</div>
+      </div>
+
+      <div class="price-cards">
+        <div class="price-card">
+          <div class="left">
+            <div class="icon-box">&#127760;</div>
+            <div>
+              <div class="service-name">企业官网</div>
+              <div class="service-desc">3-5页 · 响应式 · 3天交付</div>
+            </div>
+          </div>
+          <div class="price">&#165;500<small>起</small></div>
+        </div>
+
+        <div class="price-card">
+          <div class="left">
+            <div class="icon-box">&#128241;</div>
+            <div>
+              <div class="service-name">小程序开发</div>
+              <div class="service-desc">含后台管理 · 7天交付</div>
+            </div>
+          </div>
+          <div class="price">&#165;1500<small>起</small></div>
+        </div>
+
+        <div class="price-card">
+          <div class="left">
+            <div class="icon-box">&#128187;</div>
+            <div>
+              <div class="service-name">APP 开发</div>
+              <div class="service-desc">Android / iOS 原生</div>
+            </div>
+          </div>
+          <div class="price">&#165;2000<small>起</small></div>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="cta">oreocolor.xyz</div>
+        <div class="cta-sub">查看完整作品集 &#8594;</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
