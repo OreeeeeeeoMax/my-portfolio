@@ -88,7 +88,7 @@ my-portfolio/
 ## 展示的作品案例
 
 ### 1. 企业官网作品集
-**网址：** https://corp-site-template.vercel.app
+**网址：** https://corp.oreocolor.xyz（原 corp-site-template.vercel.app）
 **描述：** 包含 3 个行业的高端官网设计
 - 餐饮/粤式私房菜（金色主题）
 - 医美诊所（粉色主题）
@@ -96,7 +96,7 @@ my-portfolio/
 **技术：** Vite + Tailwind CSS
 
 ### 2. 色觉体验工具
-**网址：** https://color-v2.vercel.app
+**网址：** https://color.oreocolor.xyz（原 color-v2.vercel.app）
 **描述：** 模拟不同色觉下的视觉效果
 **技术：** Canvas + 色彩算法
 **注意：** 此项目不重要，仅作为技术展示
@@ -136,8 +136,8 @@ my-portfolio/
 
 **Vercel 项目：**
 1. my-portfolio → https://oreocolor.xyz（主站）
-2. corp-site-template → https://corp-site-template.vercel.app
-3. color-v2 → https://color-v2.vercel.app
+2. corp-site-template → https://corp.oreocolor.xyz
+3. color-v2 → https://color.oreocolor.xyz
 
 **DNS 配置：**
 - A 记录：oreocolor.xyz → 76.76.21.21
